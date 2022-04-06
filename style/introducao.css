@@ -59,41 +59,29 @@
     justify-content: center;
     gap: 40px;
   }
-}
 
-.introducao p {
-  font-size: 1rem;
-}
+  @media (max-width: 450px) {
 
-.introducao h1::before {
-  width: 30px;
-  height: 10px;
-  left: 0px;
-}
+    .header {
+      gap: 20px;
+    }
 
+    .introducao {
+      grid-template-columns: 1fr;
+      gap: 20px;
+      padding: 20px;
+      padding-bottom: 30px;
+    }
 
-@media (max-width: 450px) {
+    .introducao img {
+      display: none;
+    }
 
-  .header {
-    gap: 20px;
+    .introducao div {
+      text-align: center;
+    }
+
+    .introducao h1::before {
+      display: none;
+    }
   }
-
-  .introducao {
-    grid-template-columns: 1fr;
-    gap: 20px;
-    padding: 20px;
-    padding-bottom: 30px;
-  }
-
-  .introducao img {
-    display: none;
-  }
-
-  .introducao div {
-    text-align: center;
-  }
-
-  .introducao h1::before {
-    display: none;
-  }
-}
